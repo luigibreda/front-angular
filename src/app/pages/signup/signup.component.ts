@@ -44,10 +44,14 @@ export class SignUpComponent {
   }
 
   submit(){
+    if (this.signupForm.valid) {
     this.loginService.signup(this.signupForm.value.name, this.signupForm.value.email, this.signupForm.value.password).subscribe({
-      next: () => this.toastService.success("Login feito com sucesso!"),
+      next: () => this.toastService.success("Registro criado com sucesso! Redirecionando..."),
       error: () => this.toastService.error("Erro inesperado! Tente novamente mais tarde")
     })
+  } else {
+    console.error("Por favor, preencha todos os campos corretamente.");
+  }
   }
 
   navigate(){
