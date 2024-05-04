@@ -92,3 +92,18 @@ main {
         }
     }
 }
+
+.voltar-icon {
+    background-color: #8a31fa;
+    padding: 1% 2%;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: white;
+    cursor: pointer; // Adicionando cursor pointer
+    transition: transform 0.2s ease-in-out; // Adicionando transição suave
+}
+
+.voltar-icon:hover {
+    transform: scale(1.1); // Aumentando ligeiramente o tamanho no hover
+}

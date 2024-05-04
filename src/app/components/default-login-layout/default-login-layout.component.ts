@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-default-login-layout',
@@ -16,6 +17,12 @@ export class DefaultLoginLayoutComponent {
 
   @Output("navigate") onNavigate = new EventEmitter();
   
+  constructor(private location: Location) { }
+
+  voltar() {
+    this.location.back();
+}
+
   submit(){
     this.onSubmit.emit();
   }
