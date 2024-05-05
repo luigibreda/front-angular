@@ -13,13 +13,5 @@ export class AppComponent {
 
   constructor(private router: Router) { }
 
-  Login() {
-    this.router.navigate(['/login']); 
-  }
-
-  Registrar() {
-    this.router.navigate(['/signup']); 
-  }
-
 }
 

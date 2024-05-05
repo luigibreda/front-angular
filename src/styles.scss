@@ -10,3 +10,15 @@
 html, body {
     height: 100%;
 }
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+    background-color: transparent; /* Cor de fundo da barra de rolagem */
+}
+
+/* Estilizando o indicador (thumb) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Cor do indicador (thumb) */
+    border-radius: 5px; /* Arredondamento das bordas */
+}
