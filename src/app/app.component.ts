@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, DashboardComponent, MenuLateralComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
