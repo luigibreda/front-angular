@@ -21,4 +21,9 @@ export class AuthGuard implements CanActivate {
       return false;
     }
   }
+  
+  isAuthenticated(): boolean {
+    const authToken = sessionStorage.getItem('auth-token');
+    return !!authToken; // Retorna true se authToken existe
+  }
 }

@@ -18,12 +18,12 @@
   <!-- ======== Preloader =========== -->
 
   <!-- ======== sidebar-nav start =========== -->
-  <app-menu-lateral></app-menu-lateral>
+  <app-menu-lateral *ngIf="authGuard.isAuthenticated()"></app-menu-lateral>
   <div class="overlay"></div>
-  
-  <main class="main-wrapper">
+
+  <main [class.main-wrapper]="authGuard.isAuthenticated()">
     <!-- ========== header start ========== -->
-    <app-menu-topo></app-menu-topo>
+    <app-menu-topo ></app-menu-topo>
 		  
       <router-outlet />
       
