@@ -3,8 +3,8 @@
     <div class="col-lg-8 mx-auto">
         <p class="lead mb-4 roboto-light">Ganhe dinheiro com cada mil visualizações! Nosso sistema de monetização paga a cada 1.000 visualizações. Além disso, oferecemos um dashboard completo para que você acompanhe seus ganhos em tempo real. E para facilitar ainda mais, disponibilizamos saques através de Pix e criptomoedas.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" (click)="Login()">Entrar</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4" (click)="Registrar()">Começe a Faturar</button>
+            <button type="button" class="main-btn primary-btn btn-hover" (click)="Login()">Entrar</button>
+            <button type="button" class="main-btn dark-btn btn-hover" (click)="Registrar()">Começe a Faturar</button>
         </div>
     </div>
     <div class="overflow-hidden" style="max-height: 30vh;">
@@ -18,7 +18,7 @@
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="col d-flex align-items-start">
             <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <i class="bi bi-piggy-bank"></i>
+                <i class="lni lni-money-protection"></i>
             </div>
             <div>
                 <h2>Indique e Ganhe!</h2>
@@ -27,7 +27,7 @@
         </div>
         <div class="col d-flex align-items-start">
             <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <i class="bi bi-wallet2"></i>
+                <i class="lni lni-money-protection"></i>
             </div>
             <div>
                 <h2>Saque no PIX!</h2>
@@ -36,7 +36,7 @@
         </div>
         <div class="col d-flex align-items-start">
             <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                <i class="bi bi-currency-exchange"></i>
+                <i class="lni lni-money-protection"></i>
             </div>
             <div>
                 <h2>Saque em Cripto!</h2>
@@ -51,10 +51,10 @@
     <div class="py-5">
         <h1 class="display-5 fw-bold text-white">Comece a ganhar agora!</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="fs-5 roboto-light mb-4">Aproveite todas as vantagens da nossa plataforma e comece a ganhar dinheiro hoje mesmo! Com a nossa solução de monetização, você pode transformar suas visualizações em lucro. Cadastre-se agora e descubra como maximizar seus ganhos de forma simples e eficaz.</p>
+            <p class="lead mb-4 roboto-light text-gray">Aproveite todas as vantagens da nossa plataforma e comece a ganhar dinheiro hoje mesmo! Com a nossa solução de monetização, você pode transformar suas visualizações em lucro. Cadastre-se agora e descubra como maximizar seus ganhos de forma simples e eficaz.</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3 fw-bold">Cadastre-se</button>
-                <button type="button" class="btn btn-outline-light btn-lg px-4">Saiba mais</button>
+                <button type="button" (click)="Registrar()" class="main-btn primary-btn btn-hover fw-bold">Cadastre-se</button>
+                <button type="button" class="main-btn ligth-btn btn-hover">Saiba mais</button>
             </div>
         </div>
     </div>
@@ -67,10 +67,10 @@
         </div>
         <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">Aumente seus ganhos com nosso Programa de Afiliados!</h1>
-            <p class="lead">Promova nossos produtos e ganhe comissões generosas por cada venda realizada através do seu link de afiliado. Nosso programa de afiliados oferece uma ótima oportunidade para aumentar sua renda de forma simples e eficaz.</p>
+            <p class="lead mb-4 roboto-light">Promova nossos produtos e ganhe comissões generosas por cada venda realizada através do seu link de afiliado. Nosso programa de afiliados oferece uma ótima oportunidade para aumentar sua renda de forma simples e eficaz.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Cadastre-se</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Saiba mais</button>
+                <button type="button" (click)="Registrar()" class="main-btn primary-btn">Cadastre-se</button>
+                <button type="button" class="main-btn dark-btn btn-hover">Saiba mais</button>
             </div>
         </div>
     </div>

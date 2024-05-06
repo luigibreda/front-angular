@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginService } from '../../services/login.service';
 
 @Component({
   selector: 'app-menu-topo',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './menu-topo.component.scss'
 })
 export class MenuTopoComponent {
+  
+  constructor(private loginService: LoginService) {}
 
+  sair() {
+    this.loginService.logout();
+  }
 }

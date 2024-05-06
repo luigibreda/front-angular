@@ -38,7 +38,7 @@ export class LoginService {
     sessionStorage.removeItem('username');
 
     // Redireciona o usuário para a página de login
-    this.router.navigate(['/login']);
+    this.router.navigate(['/']);
   }
-  
+
 }
