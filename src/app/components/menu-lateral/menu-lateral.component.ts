@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu-lateral',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './menu-lateral.component.scss'
 })
 export class MenuLateralComponent {
+  
+  constructor( private router: Router) {}
 
+  Home() {
+    this.router.navigate(['/']); 
+  }
+  
 }
