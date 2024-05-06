@@ -1,4 +1,5 @@
-(function () {
+
+document.addEventListener("DOMContentLoaded", function() {
   /* ========= Preloader ======== */
   const preloader = document.querySelectorAll('#preloader')
 
@@ -50,4 +51,4 @@
     overlay.classList.remove("active");
     mainWrapper.classList.remove("active");
   });
-})();
+});

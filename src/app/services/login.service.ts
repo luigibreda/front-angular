@@ -31,4 +31,14 @@ export class LoginService {
       })
     )
   }
+
+  logout() {
+    // Limpa os dados de autenticação armazenados na sessão
+    sessionStorage.removeItem('auth-token');
+    sessionStorage.removeItem('username');
+
+    // Redireciona o usuário para a página de login
+    this.router.navigate(['/login']);
+  }
+  
 }
